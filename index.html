@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL Med Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ASL Med Translator</h1>
+        <input type="text" id="searchBox" placeholder="Search for a medical term..." oninput="filterTerms()">
+        <ul id="searchResults"></ul>
+    </div>
+    <div id="definitionContainer" class="hidden">
+        <h2 id="termTitle"></h2>
+        <p id="termDefinition"></p>
+        <iframe id="termVideo" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        <button onclick="goBack()">Back to Search</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
